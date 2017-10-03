@@ -1,0 +1,196 @@
+/* root style and main site container positioning */
+html {
+  /* base font size or root size for rem */
+  font-size: 18px;
+  font-family: Helvetica;
+  color: white;
+}
+
+/* common width shared */
+.site-container {
+  width: 960px;
+}
+
+/* common display properties and values shared */
+.header-banner,
+.logo,
+.main-picture,
+.nav-bar,
+.product-grid,
+.grid-itens,
+.image,
+.information,
+.location-hours,
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+/* media queries for adjust css style to tablet size 1024px portrait orientation */
+
+@media only screen and (max-width: 1024px) {
+  ul.desktop-size {
+    display: none;
+  }
+  ul.tablet-size {
+    display: flex;
+  }
+  .product.glasses {
+    display: none;
+  }
+  .product.pen,
+  .product.watch {
+    width: 47%;
+  }
+}
+
+/* media queries for adjust css style to phone size 470px */
+
+@media only screen and (max-width: 470px) {
+  .main-banner {
+    padding: 1rem 2rem;
+    margin-top: 10rem;
+  }
+  .main-picture {
+    height: 15rem;
+  }
+  .product.watch {
+    display: none;
+  }
+  .product.pen {
+    width: 90%;
+  }
+}
+
+/* style for header section including: logo, main banner, navigation */
+.header-banner {
+  width: 100%;
+  background-color: black;
+}
+
+.logo {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo img {
+  height: 1.5rem;
+  width: auto;
+  padding-left: 0.5rem;
+}
+
+.logo span {
+  font-size: 1rem;
+  padding: 0.66rem 1rem;
+}
+
+.main-picture {
+  background-image: url('../images/moto.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 25rem;
+}
+
+.main-banner {
+  background-color: black;
+  font-weight: bold;
+  width: 20rem;
+  padding: 2rem 3rem;
+  margin-top: 9rem;
+}
+
+.main-banner h2 {
+  font-size: 1rem;
+  padding-bottom: 0.25rem;
+}
+
+.main-banner h1 {
+  font-size: 2rem;
+}
+
+.nav-bar {
+  background-color: firebrick;
+  width: 100%;
+}
+
+/* properties for nav bar using desktop */
+
+.desktop-size {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+}
+
+/* properties for nav bar using tablet */
+
+.tablet-size {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 0;
+}
+
+/* style for main section: product grid */
+.grid-itens {
+  justify-content: space-between;
+  padding: 3rem 0;
+}
+
+.product {
+  width: 30%;
+}
+
+.image {
+  border: 4px solid black;
+  overflow: hidden;
+  height: 9rem;
+  padding: 2rem 0;
+  align-items: center;
+  align-content: center;
+}
+
+.image img {
+  max-width: 8em;
+}
+
+.product p {
+  background-color: black;
+  padding: 0.5rem 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* style for main section: location and hours */
+
+.location-hours {
+  justify-content: space-between;
+  padding-bottom: 4rem;
+}
+
+.location-hours .banner {
+  width: 35%;
+}
+
+.banner .title {
+  background-color: black;
+  padding: 1rem 0 1rem 2rem;
+}
+
+.banner .data {
+  color: black;
+}
+
+/* style for footer section */
+
+footer {
+  width: 100%;
+  height: 10rem;
+  background-color: black;
+  align-items: center;
+}
+
+.footer-container p {
+  text-align: left;
+}
