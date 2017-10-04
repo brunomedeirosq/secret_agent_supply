@@ -28,7 +28,7 @@ footer {
 
 /* media queries for adjust css style to tablet size 1024px portrait orientation */
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) and (min-width: 470px) {
   ul.desktop-size {
     display: none;
   }
@@ -59,6 +59,10 @@ footer {
   }
   .product.pen {
     width: 90%;
+  }
+
+  .footer-container p {
+    text-align: center;
   }
 }
 
